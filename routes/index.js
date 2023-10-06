@@ -4,7 +4,7 @@ const router = express.Router();
 const homeController = require('../controllers/home_controller');
 
 router.get('/', homeController.home);
-router.use('/',require('./users'))
+router.use('/users',require('./users')) 
 
 
 console.log('hii jorda')
