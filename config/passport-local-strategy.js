@@ -26,7 +26,6 @@ async function(email, password, done) {
 }));
 
 
-
 // serializing the user to decide which key is to be kept in the cookies
 passport.serializeUser(function(user, done){
     done(null, user.id);
