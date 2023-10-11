@@ -66,7 +66,7 @@ module.exports.destroySession = function(req, res) {
         if (err) {
             console.error(err);
         }
-        
+        console.log("logged out")
         return res.redirect('/');
     });
 }
