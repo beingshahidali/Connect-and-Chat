@@ -9,17 +9,25 @@ const session = require('express-session');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
 const MongoStore = require('connect-mongo')(session);
-const sassMiddleware =require('node-sass-middleware');
+const sassMiddleware = require('node-sass-middleware');
+const flash = require('connect-flash');
+const customMware = require('./config/middleware');
 
 
-app.use(sassMiddleware({
-    src: './assets/scss',
-    dest: './assets/css',
-    debug: true,
-    outputStyle: 'extended',
-    prefix: '/css'
-}));
-app.use(express.urlencoded());
+
+//setting up socket.io
+const chatServer = require('http').Server(app);
+
+const chatSockets = require('./config/chat_sockets').chatSockets(chatServer);
+chatServer.listen(5000);
+console.log('Chat server listening on port 5000')
+
+app.set('view engine', 'ejs');
+app.set('views', './views');
+
+
+
+app.use(express.urlencoded({ extended: true }))
 
 app.use(cookieParser());
 
@@ -34,8 +42,6 @@ app.set('layout extractScripts', true);
 
 
 // set up the view engine
-app.set('view engine', 'ejs');
-app.set('views', './views');
 
 // mongo store is used to store the session cookie in the db
 app.use(session({
@@ -64,8 +70,12 @@ app.use(passport.session());
 
 app.use(passport.setAuthenticatedUser);
 
+app.use(flash());
+app.use(customMware.setFlash);
+
 // use express router
 app.use('/', require('./routes'));
+
 
 
 app.listen(port, function(err){

@@ -1,8 +1,36 @@
-<h1>Sign In</h1>
+<link rel="stylesheet" href="sign_in.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
-<form action="/users/create-session" method="POST">
-    <input type="email" name="email" placeholder="Email"  required>
-    <input type="password" name="password" placeholder="Password"  required>
-    <input type="submit" value="Sign In">
 
-</form>
+<div class="container">
+
+    <div class="left-col">
+        <div class="content">
+            <!-- <img src="E:\Gold\connectX\assets\images\image.jpeg"> -->
+            <h1 id="h1-heading">Chat and Connect</h1>
+            <p id="p-heading">Fill out the form and receive our award-winning newsletter.</p>
+        </div>
+    </div>
+
+    <div class="right-col">
+        <div class="form content">
+            <form action="/users/create-session" method="POST">
+            <div class="input-wrapper">
+                <label for="name">Name</label>
+                <input type="email" name="email" placeholder="Email"  required id="sign-in-input" >
+            </div>
+            <div class="input-wrapper">
+                <label for="email">Email</label>
+                <input type="password" name="password" placeholder="Password"  required id="sign-in-input">
+            </div>
+            <div class="input-wrapper">
+                <input type="submit" value="Sign In" id="sign-in-button">
+            </div>
+           </form>
+        </div>
+    </div>
+   
+
+</div>
