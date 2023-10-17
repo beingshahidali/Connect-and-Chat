@@ -3,10 +3,11 @@
 
 <div id="home-container">
     <section id="feed-posts">
-            <h4>Posts</h4>
+            <h4 class="home-heading-posts">Posts</h4>
             <% if(locals.user){ %>
             <form action="/posts/create" id="new-post-form" method="POST">
-                <textarea name="content" cols="30" rows="3" placeholder="Type Here..." required></textarea>
+                <h2 style="color: black; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><%= locals.user.name %></h2>
+                <textarea name="content" cols="30" rows="3" placeholder="What's on your mind ????" required></textarea>
                 <input type="submit" value="Post">
             </form>
             <% } %>
@@ -24,11 +25,11 @@
         
         
         <section id="user-friends">
-            <h4>Friends</h4>
+            <h4>Connect to People</h4>
             <% for(u of all_users){%>
-                <p>
+                <div class="friend-name">
                     <a href="/users/profile/<%= u.id %>"><%= u.name %></a>
-                </p>
+                </div>
             <% } %>
         </section>
 

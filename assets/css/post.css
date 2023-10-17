@@ -1,0 +1,109 @@
+
+.comment-container-main {
+    list-style: none; /* Remove list bullet style */
+    background-color: white; /* White background for the entire post */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+}
+
+/* Style the post container */
+.post-container {
+    background-color: white; /* Orange background for the post content */
+    /* border: 1px solid #ccccccba; */
+    
+    padding: 10px;
+
+    border-radius: 5px;
+    margin: 0.2rem;
+    margin-bottom: 1rem;
+}
+.post-text{
+    font-size: 1.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style the delete button */
+.delete-post-button {
+    color: #ff0000; /* Blue color for the delete button */
+    text-decoration: none;
+    text-align: right;
+    font-size: 1rem;
+    margin-left: 55vw;
+    
+}
+
+.friend-name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0.4rem;
+    text-transform: capitalize;
+}
+
+
+/* Style the post content */
+.post-container p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Style the user name */
+.user-name-comment {
+    font-size: 24px;
+    color: #117adc;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 2rem;
+    font-weight: 800;
+
+}
+
+/* Style the comment form */
+.form-post-main {
+    margin: 2px; /* Reduced margin */
+
+}
+
+/* Style the comment input field */
+.comment-input {
+    width: 40%;
+    padding: 0.7rem; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    border: 1px solid #171010;
+    border-radius: 5px;
+    margin: 2px;
+    margin-bottom: 4px;
+}
+
+/* Style the comment submit button */
+.button-comment {
+    background-color: #dc800f; /* Blue color for the comment submit button */
+    color: #fff;
+    padding: 5px 10px; /* Reduced padding */
+    font-size: 12px; /* Reduced font size */
+    font-weight: 550;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style the comment list */
+.post-comments-list {
+    margin-top: 10px;
+}
+
+/* Individual comments */
+.comment {
+    background-color: #87CEEB; /* Light blue background for individual comments */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Hover effect for comment submit button */
+.button-comment:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+

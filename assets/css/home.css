@@ -1,4 +1,5 @@
 #home-container {
+
   display: flex; }
   #home-container #feed-posts {
     width: 70%;
@@ -8,3 +9,39 @@
     padding: 10px;
     border-left: 1px solid lightgrey;
     height: 100%; }
+
+  #new-post-form {
+    background-color: white;
+  
+    padding: 1rem;
+    /* border: 1px solid #2706a9; */
+    border-radius: 5px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  #new-post-form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.378);
+    border: 1px solid #6f6d77;
+    border-radius: 5px;
+  }
+
+  #new-post-form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #new-post-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  .home-heading-posts{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+  }
