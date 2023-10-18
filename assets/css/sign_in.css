@@ -33,7 +33,7 @@
     padding: 6.75rem 8vw;
 }
 
-.h1-heading {
+#h1-heading {
     margin: 0;
     font-family: 'Bebas Neue';
     font-weight: normal;
@@ -41,10 +41,11 @@
     line-height: 1.2em;
 }
 
-.p-heading{
+#p-heading{
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 0;
+    align-content: center;
 }
 
 label {
