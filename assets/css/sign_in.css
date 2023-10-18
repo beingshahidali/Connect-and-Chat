@@ -6,7 +6,7 @@
 }
 
 .left-col {
-    background: #5200FF;
+    background: #434a4f;
     color: white;
     position: relative;
     text-align: center;
@@ -64,7 +64,7 @@ label {
 
 #sign-in-button {
     width: 100%;
-    background: #5200FF;
+    background: #ff9d00;
     padding: 1em;
     color: white;
     border: none;
