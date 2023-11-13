@@ -5,11 +5,17 @@
     <section id="feed-posts">
             <h4 class="home-heading-posts">Posts</h4>
             <% if(locals.user){ %>
-            <form action="/posts/create" id="new-post-form" method="POST">
-                <h2 style="color: black; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><%= locals.user.name %></h2>
-                <textarea name="content" cols="30" rows="3" placeholder="What's on your mind ????" required></textarea>
-                <input type="submit" value="Post">
-            </form>
+                <form action="/posts/create" id="new-post-form" method="POST">
+                   <div class="home--heading">
+                    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/user-male-circle.png" alt="user-male-circle"/>                    
+                    <h2 style="color: black; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                             <%= locals.user.name %>
+                    </h2>
+                   </div>
+                    <textarea name="content" cols="30" rows="3" placeholder="What's on your mind ????" required></textarea>
+                    <input type="submit" value="Post"> 
+                </form>
+                
             <% } %>
         
             <div id="posts-list-container">
