@@ -2,17 +2,22 @@
 <li id="comment-<%= comment._id %>" class="comment-main">
         <div class="comment-section">
             
-            <small>
+            <small id="commenter-name">
                 <%= comment.user.name %>
             </small>
             <% if (locals.user && locals.user.id == comment.user.id){ %>
-            
+                
                 <small  >
-                    <a class="delete-comment-button" href="/comments/destroy/<%= comment.id %>">X</a>
+                    <a class="delete-comment-button" href="/comments/destroy/<%= comment.id %>">
+                        <img width="12" height="12" src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste"/>
+                    </a>
                 </small>
                 <% } %>
             <br>
+            <p id="comment-date">  <%= post.updatedAt.toLocaleString() %></p>
+            
             <%= comment.content %>
+            
             <br>
            
         </div>    
