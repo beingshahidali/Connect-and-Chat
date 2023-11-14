@@ -7,7 +7,7 @@
 </div>
 
 <div>
-   # Project Dependencies
+  <h1>Project Dependencies</h1>
 
 This project utilizes various dependencies to enhance its functionality. Here's an overview of the key dependencies and their roles:
 
