@@ -23,11 +23,12 @@
   #new-post-form textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #6f6d7741;
+    border: 2px solid #6f6d77af;
     border-radius: 10px;
   }
   textarea::placeholder {
-    color: red;
+    font-size: 1rem;
+    color: black;
 }
 
   #new-post-form input[type="submit"] {

@@ -1,4 +1,5 @@
 class chatEngine{
+
     constructor(chatBoxId,userEmail){
         this.chatBoxId=$(`#${chatBoxId}`);
         this.userEmail=userEmail;
@@ -10,9 +11,7 @@ class chatEngine{
             this.connectionHandler();
 
         }
-        console.log('class',this);
-
-
+        console.log('class',this);        
     }
     connectionHandler(){
         console.log('function',this);
@@ -80,13 +79,12 @@ class chatEngine{
             self.socket.emit('typing',{
                 user_email:self.userEmail
             });
-
         });
 
         //receiving request of broadcasting msg ie 'user is typing' to other users 
         self.socket.on('typing',function(data){
             console.log('data is',data.user_email);
-            $('#feedback').html(data.user_email+'<i> is typing...<i>')
+            $('#0FEE64ACk').html(data.user_email+'<i> is typing...<i>')
         });
         
         //receiving request of stop broadcasting msg ie 'user is typing' to other users 
