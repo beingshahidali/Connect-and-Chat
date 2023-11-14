@@ -5,6 +5,10 @@
 
 <div></div>
   <img src="https://github.com/beingshahidali/Connect-and-Chat/assets/57036280/ac9e8d37-0880-4472-8240-3c8f315344e9" width="750" alt="SignIn page">
+  <img src="https://github.com/beingshahidali/Connect-and-Chat/assets/57036280/e3881476-e31f-45f7-bc81-7806f6e1e38f" width="750" alt="SignIn page">
+
+
+  
 </div>
 
 
