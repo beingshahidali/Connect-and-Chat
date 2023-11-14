@@ -3,4 +3,8 @@
   <img src="https://github.com/beingshahidali/Connect-and-Chat/assets/57036280/06295623-17fd-4831-858a-c4c2533e30d1" width="600" alt="Image 2">
 </div>
 
+<div></div>
+  <img src="https://github.com/beingshahidali/Connect-and-Chat/assets/57036280/ac9e8d37-0880-4472-8240-3c8f315344e9" width="600" alt="SignIn page">
+</div>
+
 
