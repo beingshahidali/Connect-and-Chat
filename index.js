@@ -47,7 +47,7 @@ app.use(express.static('public', { cacheControl: false }));
 
 // mongo store is used to store the session cookie in the db
 app.use(session({
-    name: 'codeial',
+    name: 'Connect and Chat',
     // TODO change the secret before deployment in production mode
     secret: 'blahsomething',
     saveUninitialized: false,
